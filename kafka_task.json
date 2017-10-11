@@ -1,0 +1,50 @@
+{
+  "type":"default_supervisor",
+  "dataSchema":{
+    "dataSource":"cyz-test00014",
+    "parser":{
+      "parseSpec":{
+        "format":"json",
+        "dimensionsSpec":{
+          "dynamicDimension":true,
+          "dimensions":[]
+        },
+        "timestampSpec":{
+          "column":"d|time",
+          "excludeTimeColumn": false,
+          "format":"millis"
+        }
+      },
+      "type":"single"
+    },
+    "metricsSpec":[],
+    "granularitySpec":{
+      "type": "uniform",
+      "segmentGranularity": "DAY",
+      "queryGranularity": "NONE"
+    }
+  },
+  "tuningConfig":{
+    "type":"kafka",
+    "maxRowsInMemory":10000000,
+    "maxRowsPerSegment":20000000,
+    "intermediatePersistPeriod":"PT10M",
+    "buildV9Directly":true,
+    "reportParseExceptions":true
+  },
+  "ioConfig":{
+    "topic":"testKafkaData1",
+    "replicas":1,"taskCount":1,"taskDuration":"PT21600S",
+    "consumerProperties":{
+      "bootstrap.servers":"192.168.0.223:9092,192.168.0.224:9092,192.168.0.225:9092"
+    },
+    "startDelay":"PT5S",
+    "period":"PT30S",
+    "useEarliestOffset":true,
+    "completionTimeout":"PT1800S",
+    "lateMessageRejectionPeriod":null
+  },
+  "ipLibSpec":{
+    "type":"none"
+  }
+}

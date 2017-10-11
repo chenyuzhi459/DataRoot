@@ -1,0 +1,668 @@
+2017-06-24 09:43:04  [ main:0 ] - [ INFO ]  ProducerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	bootstrap.servers = [192.168.0.220:9092, 192.168.0.221:9092, 192.168.0.222:9092]
+	ssl.keystore.type = JKS
+	sasl.mechanism = GSSAPI
+	max.block.ms = 60000
+	interceptor.classes = null
+	ssl.truststore.password = null
+	client.id = DemoProducer1
+	ssl.endpoint.identification.algorithm = null
+	request.timeout.ms = 30000
+	acks = 1
+	receive.buffer.bytes = 32768
+	ssl.truststore.type = JKS
+	retries = 0
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	send.buffer.bytes = 131072
+	compression.type = none
+	metadata.fetch.timeout.ms = 60000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	block.on.buffer.full = false
+	ssl.key.password = null
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	batch.size = 16384
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	max.request.size = 1048576
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	linger.ms = 0
+
+2017-06-24 09:43:04  [ main:143 ] - [ DEBUG ]  Added sensor with name bufferpool-wait-time
+2017-06-24 09:43:04  [ main:147 ] - [ DEBUG ]  Added sensor with name buffer-exhausted-records
+2017-06-24 09:43:04  [ main:149 ] - [ DEBUG ]  Updated cluster metadata version 1 to Cluster(nodes = [192.168.0.220:9092 (id: -1 rack: null), 192.168.0.222:9092 (id: -3 rack: null), 192.168.0.221:9092 (id: -2 rack: null)], partitions = [])
+2017-06-24 09:43:04  [ main:156 ] - [ DEBUG ]  Added sensor with name connections-closed:
+2017-06-24 09:43:04  [ main:157 ] - [ DEBUG ]  Added sensor with name connections-created:
+2017-06-24 09:43:04  [ main:157 ] - [ DEBUG ]  Added sensor with name bytes-sent-received:
+2017-06-24 09:43:04  [ main:157 ] - [ DEBUG ]  Added sensor with name bytes-sent:
+2017-06-24 09:43:04  [ main:158 ] - [ DEBUG ]  Added sensor with name bytes-received:
+2017-06-24 09:43:04  [ main:158 ] - [ DEBUG ]  Added sensor with name select-time:
+2017-06-24 09:43:04  [ main:159 ] - [ DEBUG ]  Added sensor with name io-time:
+2017-06-24 09:43:04  [ main:162 ] - [ DEBUG ]  Added sensor with name batch-size
+2017-06-24 09:43:04  [ main:162 ] - [ DEBUG ]  Added sensor with name compression-rate
+2017-06-24 09:43:04  [ main:163 ] - [ DEBUG ]  Added sensor with name queue-time
+2017-06-24 09:43:04  [ main:163 ] - [ DEBUG ]  Added sensor with name request-time
+2017-06-24 09:43:04  [ main:163 ] - [ DEBUG ]  Added sensor with name produce-throttle-time
+2017-06-24 09:43:04  [ main:165 ] - [ DEBUG ]  Added sensor with name records-per-request
+2017-06-24 09:43:04  [ main:165 ] - [ DEBUG ]  Added sensor with name record-retries
+2017-06-24 09:43:04  [ main:165 ] - [ DEBUG ]  Added sensor with name errors
+2017-06-24 09:43:04  [ main:166 ] - [ DEBUG ]  Added sensor with name record-size-max
+2017-06-24 09:43:04  [ kafka-producer-network-thread | DemoProducer1:168 ] - [ DEBUG ]  Starting Kafka producer I/O thread.
+2017-06-24 09:43:04  [ main:168 ] - [ INFO ]  ProducerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	bootstrap.servers = [192.168.0.220:9092, 192.168.0.221:9092, 192.168.0.222:9092]
+	ssl.keystore.type = JKS
+	sasl.mechanism = GSSAPI
+	max.block.ms = 60000
+	interceptor.classes = null
+	ssl.truststore.password = null
+	client.id = DemoProducer1
+	ssl.endpoint.identification.algorithm = null
+	request.timeout.ms = 30000
+	acks = 1
+	receive.buffer.bytes = 32768
+	ssl.truststore.type = JKS
+	retries = 0
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	send.buffer.bytes = 131072
+	compression.type = none
+	metadata.fetch.timeout.ms = 60000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	block.on.buffer.full = false
+	ssl.key.password = null
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	batch.size = 16384
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	max.request.size = 1048576
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	linger.ms = 0
+
+2017-06-24 09:43:04  [ main:169 ] - [ WARN ]  The configuration numOfDayBefore = 2 was supplied but isn't a known config.
+2017-06-24 09:43:04  [ main:169 ] - [ WARN ]  The configuration topic = testRealTime0623 was supplied but isn't a known config.
+2017-06-24 09:43:04  [ main:172 ] - [ INFO ]  Kafka version : 0.10.0.1
+2017-06-24 09:43:04  [ main:172 ] - [ INFO ]  Kafka commitId : a7a17cdec9eaa6c5
+2017-06-24 09:43:04  [ main:179 ] - [ DEBUG ]  Kafka producer started
+2017-06-24 09:43:05  [ main:1506 ] - [ INFO ]  user number : 2309  , send message count : 48677
+2017-06-24 09:43:38  [ main:34208 ] - [ INFO ]  user number : 2309  , send message count : 48679
+2017-06-24 09:45:28  [ main:144401 ] - [ INFO ]  user number : 2310  , send message count : 48708
+2017-06-24 09:46:09  [ main:185764 ] - [ INFO ]  user number : 2310  , send message count : 48724
+2017-06-24 09:46:56  [ main:231838 ] - [ INFO ]  user number : 2310  , send message count : 48732
+2017-06-24 09:48:04  [ kafka-producer-network-thread | DemoProducer1:300172 ] - [ DEBUG ]  Initialize connection to node -1 for sending metadata request
+2017-06-24 09:48:04  [ kafka-producer-network-thread | DemoProducer1:300173 ] - [ DEBUG ]  Initiating connection to node -1 at 192.168.0.220:9092.
+2017-06-24 09:48:04  [ kafka-producer-network-thread | DemoProducer1:300213 ] - [ DEBUG ]  Added sensor with name node--1.bytes-sent
+2017-06-24 09:48:04  [ kafka-producer-network-thread | DemoProducer1:300214 ] - [ DEBUG ]  Added sensor with name node--1.bytes-received
+2017-06-24 09:48:04  [ kafka-producer-network-thread | DemoProducer1:300214 ] - [ DEBUG ]  Added sensor with name node--1.latency
+2017-06-24 09:48:04  [ kafka-producer-network-thread | DemoProducer1:300215 ] - [ DEBUG ]  Completed connection to node -1
+2017-06-24 09:48:04  [ kafka-producer-network-thread | DemoProducer1:300232 ] - [ DEBUG ]  Sending metadata request {topics=[]} to node -1
+2017-06-24 09:48:04  [ kafka-producer-network-thread | DemoProducer1:300248 ] - [ DEBUG ]  Updated cluster metadata version 2 to Cluster(nodes = [192.168.0.220:9092 (id: 3 rack: null), 192.168.0.221:9092 (id: 4 rack: null), 192.168.0.222:9092 (id: 2 rack: null)], partitions = [])
+2017-06-24 09:49:55  [ main:411311 ] - [ INFO ]  user number : 2311  , send message count : 48738
+2017-06-24 09:52:14  [ main:550218 ] - [ INFO ]  user number : 2311  , send message count : 48743
+2017-06-24 09:53:04  [ kafka-producer-network-thread | DemoProducer1:600270 ] - [ DEBUG ]  Initialize connection to node 3 for sending metadata request
+2017-06-24 09:53:04  [ kafka-producer-network-thread | DemoProducer1:600270 ] - [ DEBUG ]  Initiating connection to node 3 at 192.168.0.220:9092.
+2017-06-24 09:53:04  [ kafka-producer-network-thread | DemoProducer1:600270 ] - [ DEBUG ]  Added sensor with name node-3.bytes-sent
+2017-06-24 09:53:04  [ kafka-producer-network-thread | DemoProducer1:600271 ] - [ DEBUG ]  Added sensor with name node-3.bytes-received
+2017-06-24 09:53:04  [ kafka-producer-network-thread | DemoProducer1:600271 ] - [ DEBUG ]  Added sensor with name node-3.latency
+2017-06-24 09:53:04  [ kafka-producer-network-thread | DemoProducer1:600271 ] - [ DEBUG ]  Completed connection to node 3
+2017-06-24 09:53:04  [ kafka-producer-network-thread | DemoProducer1:600371 ] - [ DEBUG ]  Sending metadata request {topics=[]} to node 3
+2017-06-24 09:53:04  [ kafka-producer-network-thread | DemoProducer1:600372 ] - [ DEBUG ]  Updated cluster metadata version 3 to Cluster(nodes = [192.168.0.220:9092 (id: 3 rack: null), 192.168.0.221:9092 (id: 4 rack: null), 192.168.0.222:9092 (id: 2 rack: null)], partitions = [])
+2017-06-24 09:54:35  [ main:691766 ] - [ INFO ]  user number : 2311  , send message count : 48745
+2017-06-24 09:55:55  [ main:771734 ] - [ INFO ]  user number : 2311  , send message count : 48756
+2017-06-24 09:57:04  [ kafka-producer-network-thread | DemoProducer1:840551 ] - [ DEBUG ]  Node -1 disconnected.
+2017-06-24 09:57:04  [ kafka-producer-network-thread | DemoProducer1:840552 ] - [ DEBUG ]  Sending metadata request {topics=[]} to node 3
+2017-06-24 09:57:04  [ kafka-producer-network-thread | DemoProducer1:840552 ] - [ DEBUG ]  Updated cluster metadata version 4 to Cluster(nodes = [192.168.0.222:9092 (id: 2 rack: null), 192.168.0.220:9092 (id: 3 rack: null), 192.168.0.221:9092 (id: 4 rack: null)], partitions = [])
+2017-06-24 09:57:22  [ main:0 ] - [ INFO ]  ProducerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	bootstrap.servers = [192.168.0.220:9092, 192.168.0.221:9092, 192.168.0.222:9092]
+	ssl.keystore.type = JKS
+	sasl.mechanism = GSSAPI
+	max.block.ms = 60000
+	interceptor.classes = null
+	ssl.truststore.password = null
+	client.id = DemoProducer1
+	ssl.endpoint.identification.algorithm = null
+	request.timeout.ms = 30000
+	acks = 1
+	receive.buffer.bytes = 32768
+	ssl.truststore.type = JKS
+	retries = 0
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	send.buffer.bytes = 131072
+	compression.type = none
+	metadata.fetch.timeout.ms = 60000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	block.on.buffer.full = false
+	ssl.key.password = null
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	batch.size = 16384
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	max.request.size = 1048576
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	linger.ms = 0
+
+2017-06-24 09:57:22  [ main:63 ] - [ DEBUG ]  Added sensor with name bufferpool-wait-time
+2017-06-24 09:57:22  [ main:70 ] - [ DEBUG ]  Added sensor with name buffer-exhausted-records
+2017-06-24 09:57:22  [ main:71 ] - [ DEBUG ]  Updated cluster metadata version 1 to Cluster(nodes = [192.168.0.222:9092 (id: -3 rack: null), 192.168.0.220:9092 (id: -1 rack: null), 192.168.0.221:9092 (id: -2 rack: null)], partitions = [])
+2017-06-24 09:57:22  [ main:79 ] - [ DEBUG ]  Added sensor with name connections-closed:
+2017-06-24 09:57:22  [ main:79 ] - [ DEBUG ]  Added sensor with name connections-created:
+2017-06-24 09:57:22  [ main:80 ] - [ DEBUG ]  Added sensor with name bytes-sent-received:
+2017-06-24 09:57:22  [ main:80 ] - [ DEBUG ]  Added sensor with name bytes-sent:
+2017-06-24 09:57:22  [ main:81 ] - [ DEBUG ]  Added sensor with name bytes-received:
+2017-06-24 09:57:22  [ main:81 ] - [ DEBUG ]  Added sensor with name select-time:
+2017-06-24 09:57:22  [ main:82 ] - [ DEBUG ]  Added sensor with name io-time:
+2017-06-24 09:57:22  [ main:85 ] - [ DEBUG ]  Added sensor with name batch-size
+2017-06-24 09:57:22  [ main:85 ] - [ DEBUG ]  Added sensor with name compression-rate
+2017-06-24 09:57:22  [ main:86 ] - [ DEBUG ]  Added sensor with name queue-time
+2017-06-24 09:57:22  [ main:86 ] - [ DEBUG ]  Added sensor with name request-time
+2017-06-24 09:57:22  [ main:86 ] - [ DEBUG ]  Added sensor with name produce-throttle-time
+2017-06-24 09:57:22  [ main:88 ] - [ DEBUG ]  Added sensor with name records-per-request
+2017-06-24 09:57:22  [ main:88 ] - [ DEBUG ]  Added sensor with name record-retries
+2017-06-24 09:57:22  [ main:88 ] - [ DEBUG ]  Added sensor with name errors
+2017-06-24 09:57:22  [ main:88 ] - [ DEBUG ]  Added sensor with name record-size-max
+2017-06-24 09:57:22  [ kafka-producer-network-thread | DemoProducer1:90 ] - [ DEBUG ]  Starting Kafka producer I/O thread.
+2017-06-24 09:57:22  [ main:90 ] - [ INFO ]  ProducerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	bootstrap.servers = [192.168.0.220:9092, 192.168.0.221:9092, 192.168.0.222:9092]
+	ssl.keystore.type = JKS
+	sasl.mechanism = GSSAPI
+	max.block.ms = 60000
+	interceptor.classes = null
+	ssl.truststore.password = null
+	client.id = DemoProducer1
+	ssl.endpoint.identification.algorithm = null
+	request.timeout.ms = 30000
+	acks = 1
+	receive.buffer.bytes = 32768
+	ssl.truststore.type = JKS
+	retries = 0
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	send.buffer.bytes = 131072
+	compression.type = none
+	metadata.fetch.timeout.ms = 60000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	block.on.buffer.full = false
+	ssl.key.password = null
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	batch.size = 16384
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	max.request.size = 1048576
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	linger.ms = 0
+
+2017-06-24 09:57:22  [ main:91 ] - [ WARN ]  The configuration numOfDayBefore = 180 was supplied but isn't a known config.
+2017-06-24 09:57:22  [ main:91 ] - [ WARN ]  The configuration topic = testRealTime0623 was supplied but isn't a known config.
+2017-06-24 09:57:22  [ main:94 ] - [ INFO ]  Kafka version : 0.10.0.1
+2017-06-24 09:57:22  [ main:94 ] - [ INFO ]  Kafka commitId : a7a17cdec9eaa6c5
+2017-06-24 09:57:22  [ main:95 ] - [ DEBUG ]  Kafka producer started
+2017-06-24 09:57:44  [ main:0 ] - [ INFO ]  ProducerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	bootstrap.servers = [192.168.0.220:9092, 192.168.0.221:9092, 192.168.0.222:9092]
+	ssl.keystore.type = JKS
+	sasl.mechanism = GSSAPI
+	max.block.ms = 60000
+	interceptor.classes = null
+	ssl.truststore.password = null
+	client.id = DemoProducer1
+	ssl.endpoint.identification.algorithm = null
+	request.timeout.ms = 30000
+	acks = 1
+	receive.buffer.bytes = 32768
+	ssl.truststore.type = JKS
+	retries = 0
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	send.buffer.bytes = 131072
+	compression.type = none
+	metadata.fetch.timeout.ms = 60000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	block.on.buffer.full = false
+	ssl.key.password = null
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	batch.size = 16384
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	max.request.size = 1048576
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	linger.ms = 0
+
+2017-06-24 09:57:44  [ main:53 ] - [ DEBUG ]  Added sensor with name bufferpool-wait-time
+2017-06-24 09:57:45  [ main:60 ] - [ DEBUG ]  Added sensor with name buffer-exhausted-records
+2017-06-24 09:57:45  [ main:62 ] - [ DEBUG ]  Updated cluster metadata version 1 to Cluster(nodes = [192.168.0.221:9092 (id: -2 rack: null), 192.168.0.222:9092 (id: -3 rack: null), 192.168.0.220:9092 (id: -1 rack: null)], partitions = [])
+2017-06-24 09:57:45  [ main:70 ] - [ DEBUG ]  Added sensor with name connections-closed:
+2017-06-24 09:57:45  [ main:70 ] - [ DEBUG ]  Added sensor with name connections-created:
+2017-06-24 09:57:45  [ main:71 ] - [ DEBUG ]  Added sensor with name bytes-sent-received:
+2017-06-24 09:57:45  [ main:71 ] - [ DEBUG ]  Added sensor with name bytes-sent:
+2017-06-24 09:57:45  [ main:72 ] - [ DEBUG ]  Added sensor with name bytes-received:
+2017-06-24 09:57:45  [ main:72 ] - [ DEBUG ]  Added sensor with name select-time:
+2017-06-24 09:57:45  [ main:73 ] - [ DEBUG ]  Added sensor with name io-time:
+2017-06-24 09:57:45  [ main:76 ] - [ DEBUG ]  Added sensor with name batch-size
+2017-06-24 09:57:45  [ main:77 ] - [ DEBUG ]  Added sensor with name compression-rate
+2017-06-24 09:57:45  [ main:77 ] - [ DEBUG ]  Added sensor with name queue-time
+2017-06-24 09:57:45  [ main:78 ] - [ DEBUG ]  Added sensor with name request-time
+2017-06-24 09:57:45  [ main:78 ] - [ DEBUG ]  Added sensor with name produce-throttle-time
+2017-06-24 09:57:45  [ main:79 ] - [ DEBUG ]  Added sensor with name records-per-request
+2017-06-24 09:57:45  [ main:80 ] - [ DEBUG ]  Added sensor with name record-retries
+2017-06-24 09:57:45  [ main:80 ] - [ DEBUG ]  Added sensor with name errors
+2017-06-24 09:57:45  [ main:80 ] - [ DEBUG ]  Added sensor with name record-size-max
+2017-06-24 09:57:45  [ main:97 ] - [ INFO ]  ProducerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	bootstrap.servers = [192.168.0.220:9092, 192.168.0.221:9092, 192.168.0.222:9092]
+	ssl.keystore.type = JKS
+	sasl.mechanism = GSSAPI
+	max.block.ms = 60000
+	interceptor.classes = null
+	ssl.truststore.password = null
+	client.id = DemoProducer1
+	ssl.endpoint.identification.algorithm = null
+	request.timeout.ms = 30000
+	acks = 1
+	receive.buffer.bytes = 32768
+	ssl.truststore.type = JKS
+	retries = 0
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	send.buffer.bytes = 131072
+	compression.type = none
+	metadata.fetch.timeout.ms = 60000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	block.on.buffer.full = false
+	ssl.key.password = null
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	batch.size = 16384
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	max.request.size = 1048576
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	linger.ms = 0
+
+2017-06-24 09:57:45  [ main:98 ] - [ WARN ]  The configuration numOfDayBefore = 180 was supplied but isn't a known config.
+2017-06-24 09:57:45  [ main:98 ] - [ WARN ]  The configuration topic = testRealTime0623 was supplied but isn't a known config.
+2017-06-24 09:57:45  [ kafka-producer-network-thread | DemoProducer1:98 ] - [ DEBUG ]  Starting Kafka producer I/O thread.
+2017-06-24 09:57:45  [ main:115 ] - [ INFO ]  Kafka version : 0.10.0.1
+2017-06-24 09:57:45  [ main:115 ] - [ INFO ]  Kafka commitId : a7a17cdec9eaa6c5
+2017-06-24 09:57:45  [ main:116 ] - [ DEBUG ]  Kafka producer started
+2017-06-24 09:58:14  [ main:29168 ] - [ INFO ]  user number : 190163  , send message count : 4380251
+2017-06-24 09:58:25  [ main:40118 ] - [ INFO ]  user number : 190163  , send message count : 4380256
+2017-06-24 09:59:21  [ main:96197 ] - [ INFO ]  user number : 190163  , send message count : 4380261
+2017-06-24 10:00:18  [ main:0 ] - [ INFO ]  ProducerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	bootstrap.servers = [192.168.0.220:9092, 192.168.0.221:9092, 192.168.0.222:9092]
+	ssl.keystore.type = JKS
+	sasl.mechanism = GSSAPI
+	max.block.ms = 60000
+	interceptor.classes = null
+	ssl.truststore.password = null
+	client.id = DemoProducer1
+	ssl.endpoint.identification.algorithm = null
+	request.timeout.ms = 30000
+	acks = 1
+	receive.buffer.bytes = 32768
+	ssl.truststore.type = JKS
+	retries = 0
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	send.buffer.bytes = 131072
+	compression.type = none
+	metadata.fetch.timeout.ms = 60000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	block.on.buffer.full = false
+	ssl.key.password = null
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	batch.size = 16384
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	max.request.size = 1048576
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	linger.ms = 0
+
+2017-06-24 10:00:18  [ main:126 ] - [ DEBUG ]  Added sensor with name bufferpool-wait-time
+2017-06-24 10:00:18  [ main:133 ] - [ DEBUG ]  Added sensor with name buffer-exhausted-records
+2017-06-24 10:00:18  [ main:137 ] - [ DEBUG ]  Updated cluster metadata version 1 to Cluster(nodes = [192.168.0.222:9092 (id: -3 rack: null), 192.168.0.220:9092 (id: -1 rack: null), 192.168.0.221:9092 (id: -2 rack: null)], partitions = [])
+2017-06-24 10:00:18  [ main:146 ] - [ DEBUG ]  Added sensor with name connections-closed:
+2017-06-24 10:00:18  [ main:147 ] - [ DEBUG ]  Added sensor with name connections-created:
+2017-06-24 10:00:18  [ main:147 ] - [ DEBUG ]  Added sensor with name bytes-sent-received:
+2017-06-24 10:00:18  [ main:148 ] - [ DEBUG ]  Added sensor with name bytes-sent:
+2017-06-24 10:00:18  [ main:150 ] - [ DEBUG ]  Added sensor with name bytes-received:
+2017-06-24 10:00:18  [ main:151 ] - [ DEBUG ]  Added sensor with name select-time:
+2017-06-24 10:00:18  [ main:152 ] - [ DEBUG ]  Added sensor with name io-time:
+2017-06-24 10:00:18  [ main:155 ] - [ DEBUG ]  Added sensor with name batch-size
+2017-06-24 10:00:18  [ main:156 ] - [ DEBUG ]  Added sensor with name compression-rate
+2017-06-24 10:00:18  [ main:156 ] - [ DEBUG ]  Added sensor with name queue-time
+2017-06-24 10:00:18  [ main:157 ] - [ DEBUG ]  Added sensor with name request-time
+2017-06-24 10:00:18  [ main:157 ] - [ DEBUG ]  Added sensor with name produce-throttle-time
+2017-06-24 10:00:18  [ main:158 ] - [ DEBUG ]  Added sensor with name records-per-request
+2017-06-24 10:00:18  [ main:159 ] - [ DEBUG ]  Added sensor with name record-retries
+2017-06-24 10:00:18  [ main:159 ] - [ DEBUG ]  Added sensor with name errors
+2017-06-24 10:00:18  [ main:159 ] - [ DEBUG ]  Added sensor with name record-size-max
+2017-06-24 10:00:18  [ kafka-producer-network-thread | DemoProducer1:164 ] - [ DEBUG ]  Starting Kafka producer I/O thread.
+2017-06-24 10:00:18  [ main:165 ] - [ INFO ]  ProducerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	bootstrap.servers = [192.168.0.220:9092, 192.168.0.221:9092, 192.168.0.222:9092]
+	ssl.keystore.type = JKS
+	sasl.mechanism = GSSAPI
+	max.block.ms = 60000
+	interceptor.classes = null
+	ssl.truststore.password = null
+	client.id = DemoProducer1
+	ssl.endpoint.identification.algorithm = null
+	request.timeout.ms = 30000
+	acks = 1
+	receive.buffer.bytes = 32768
+	ssl.truststore.type = JKS
+	retries = 0
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	send.buffer.bytes = 131072
+	compression.type = none
+	metadata.fetch.timeout.ms = 60000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	block.on.buffer.full = false
+	ssl.key.password = null
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	batch.size = 16384
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	max.request.size = 1048576
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	linger.ms = 0
+
+2017-06-24 10:00:18  [ main:166 ] - [ WARN ]  The configuration numOfDayBefore = 180 was supplied but isn't a known config.
+2017-06-24 10:00:18  [ main:166 ] - [ WARN ]  The configuration topic = testRealTime0623 was supplied but isn't a known config.
+2017-06-24 10:00:18  [ main:176 ] - [ INFO ]  Kafka version : 0.10.0.1
+2017-06-24 10:00:18  [ main:176 ] - [ INFO ]  Kafka commitId : a7a17cdec9eaa6c5
+2017-06-24 10:00:18  [ main:177 ] - [ DEBUG ]  Kafka producer started
+2017-06-24 10:02:22  [ main:0 ] - [ INFO ]  ProducerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	bootstrap.servers = [192.168.0.220:9092, 192.168.0.221:9092, 192.168.0.222:9092]
+	ssl.keystore.type = JKS
+	sasl.mechanism = GSSAPI
+	max.block.ms = 60000
+	interceptor.classes = null
+	ssl.truststore.password = null
+	client.id = DemoProducer1
+	ssl.endpoint.identification.algorithm = null
+	request.timeout.ms = 30000
+	acks = 1
+	receive.buffer.bytes = 32768
+	ssl.truststore.type = JKS
+	retries = 0
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	send.buffer.bytes = 131072
+	compression.type = none
+	metadata.fetch.timeout.ms = 60000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	block.on.buffer.full = false
+	ssl.key.password = null
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	batch.size = 16384
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	max.request.size = 1048576
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	linger.ms = 0
+
+2017-06-24 10:02:22  [ main:64 ] - [ DEBUG ]  Added sensor with name bufferpool-wait-time
+2017-06-24 10:02:22  [ main:68 ] - [ DEBUG ]  Added sensor with name buffer-exhausted-records
+2017-06-24 10:02:22  [ main:70 ] - [ DEBUG ]  Updated cluster metadata version 1 to Cluster(nodes = [192.168.0.220:9092 (id: -1 rack: null), 192.168.0.221:9092 (id: -2 rack: null), 192.168.0.222:9092 (id: -3 rack: null)], partitions = [])
+2017-06-24 10:02:22  [ main:82 ] - [ DEBUG ]  Added sensor with name connections-closed:
+2017-06-24 10:02:22  [ main:82 ] - [ DEBUG ]  Added sensor with name connections-created:
+2017-06-24 10:02:22  [ main:83 ] - [ DEBUG ]  Added sensor with name bytes-sent-received:
+2017-06-24 10:02:22  [ main:83 ] - [ DEBUG ]  Added sensor with name bytes-sent:
+2017-06-24 10:02:22  [ main:84 ] - [ DEBUG ]  Added sensor with name bytes-received:
+2017-06-24 10:02:22  [ main:84 ] - [ DEBUG ]  Added sensor with name select-time:
+2017-06-24 10:02:22  [ main:85 ] - [ DEBUG ]  Added sensor with name io-time:
+2017-06-24 10:02:22  [ main:90 ] - [ DEBUG ]  Added sensor with name batch-size
+2017-06-24 10:02:22  [ main:90 ] - [ DEBUG ]  Added sensor with name compression-rate
+2017-06-24 10:02:22  [ main:91 ] - [ DEBUG ]  Added sensor with name queue-time
+2017-06-24 10:02:22  [ main:91 ] - [ DEBUG ]  Added sensor with name request-time
+2017-06-24 10:02:22  [ main:91 ] - [ DEBUG ]  Added sensor with name produce-throttle-time
+2017-06-24 10:02:22  [ main:93 ] - [ DEBUG ]  Added sensor with name records-per-request
+2017-06-24 10:02:22  [ main:93 ] - [ DEBUG ]  Added sensor with name record-retries
+2017-06-24 10:02:22  [ main:93 ] - [ DEBUG ]  Added sensor with name errors
+2017-06-24 10:02:22  [ main:93 ] - [ DEBUG ]  Added sensor with name record-size-max
+2017-06-24 10:02:22  [ main:97 ] - [ INFO ]  ProducerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	bootstrap.servers = [192.168.0.220:9092, 192.168.0.221:9092, 192.168.0.222:9092]
+	ssl.keystore.type = JKS
+	sasl.mechanism = GSSAPI
+	max.block.ms = 60000
+	interceptor.classes = null
+	ssl.truststore.password = null
+	client.id = DemoProducer1
+	ssl.endpoint.identification.algorithm = null
+	request.timeout.ms = 30000
+	acks = 1
+	receive.buffer.bytes = 32768
+	ssl.truststore.type = JKS
+	retries = 0
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	send.buffer.bytes = 131072
+	compression.type = none
+	metadata.fetch.timeout.ms = 60000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	block.on.buffer.full = false
+	ssl.key.password = null
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	batch.size = 16384
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	max.request.size = 1048576
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	linger.ms = 0
+
+2017-06-24 10:02:22  [ main:97 ] - [ WARN ]  The configuration numOfDayBefore = 360 was supplied but isn't a known config.
+2017-06-24 10:02:22  [ main:98 ] - [ WARN ]  The configuration topic = testRealTime0624 was supplied but isn't a known config.
+2017-06-24 10:02:22  [ kafka-producer-network-thread | DemoProducer1:99 ] - [ DEBUG ]  Starting Kafka producer I/O thread.
+2017-06-24 10:02:22  [ main:100 ] - [ INFO ]  Kafka version : 0.10.0.1
+2017-06-24 10:02:22  [ main:100 ] - [ INFO ]  Kafka commitId : a7a17cdec9eaa6c5
+2017-06-24 10:02:22  [ main:101 ] - [ DEBUG ]  Kafka producer started
+2017-06-24 10:02:45  [ main:23101 ] - [ INFO ]  user number : 380416  , send message count : 8746833
+2017-06-24 10:03:16  [ main:54060 ] - [ INFO ]  user number : 380416  , send message count : 8746839

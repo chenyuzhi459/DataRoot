@@ -1,0 +1,189 @@
+2017-08-07 15:02:36  [ main:0 ] - [ INFO ]  ProducerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	bootstrap.servers = [192.168.0.223:9092, 192.168.0.224:9092, 192.168.0.225:9092]
+	ssl.keystore.type = JKS
+	sasl.mechanism = GSSAPI
+	max.block.ms = 60000
+	interceptor.classes = null
+	ssl.truststore.password = null
+	client.id = DemoProducer1
+	ssl.endpoint.identification.algorithm = null
+	request.timeout.ms = 30000
+	acks = 1
+	receive.buffer.bytes = 32768
+	ssl.truststore.type = JKS
+	retries = 0
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	send.buffer.bytes = 131072
+	compression.type = none
+	metadata.fetch.timeout.ms = 60000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	block.on.buffer.full = false
+	ssl.key.password = null
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	batch.size = 16384
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	max.request.size = 1048576
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	linger.ms = 0
+
+2017-08-07 15:02:36  [ main:134 ] - [ DEBUG ]  Added sensor with name bufferpool-wait-time
+2017-08-07 15:02:36  [ main:139 ] - [ DEBUG ]  Added sensor with name buffer-exhausted-records
+2017-08-07 15:02:36  [ main:140 ] - [ DEBUG ]  Updated cluster metadata version 1 to Cluster(nodes = [192.168.0.225:9092 (id: -3 rack: null), 192.168.0.223:9092 (id: -1 rack: null), 192.168.0.224:9092 (id: -2 rack: null)], partitions = [])
+2017-08-07 15:02:36  [ main:148 ] - [ DEBUG ]  Added sensor with name connections-closed:
+2017-08-07 15:02:36  [ main:148 ] - [ DEBUG ]  Added sensor with name connections-created:
+2017-08-07 15:02:36  [ main:148 ] - [ DEBUG ]  Added sensor with name bytes-sent-received:
+2017-08-07 15:02:36  [ main:149 ] - [ DEBUG ]  Added sensor with name bytes-sent:
+2017-08-07 15:02:36  [ main:150 ] - [ DEBUG ]  Added sensor with name bytes-received:
+2017-08-07 15:02:36  [ main:150 ] - [ DEBUG ]  Added sensor with name select-time:
+2017-08-07 15:02:36  [ main:151 ] - [ DEBUG ]  Added sensor with name io-time:
+2017-08-07 15:02:36  [ main:156 ] - [ DEBUG ]  Added sensor with name batch-size
+2017-08-07 15:02:36  [ main:157 ] - [ DEBUG ]  Added sensor with name compression-rate
+2017-08-07 15:02:36  [ main:157 ] - [ DEBUG ]  Added sensor with name queue-time
+2017-08-07 15:02:36  [ main:157 ] - [ DEBUG ]  Added sensor with name request-time
+2017-08-07 15:02:36  [ main:158 ] - [ DEBUG ]  Added sensor with name produce-throttle-time
+2017-08-07 15:02:36  [ main:159 ] - [ DEBUG ]  Added sensor with name records-per-request
+2017-08-07 15:02:36  [ main:160 ] - [ DEBUG ]  Added sensor with name record-retries
+2017-08-07 15:02:36  [ main:160 ] - [ DEBUG ]  Added sensor with name errors
+2017-08-07 15:02:36  [ main:160 ] - [ DEBUG ]  Added sensor with name record-size-max
+2017-08-07 15:02:36  [ kafka-producer-network-thread | DemoProducer1:161 ] - [ DEBUG ]  Starting Kafka producer I/O thread.
+2017-08-07 15:02:36  [ main:162 ] - [ INFO ]  ProducerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	bootstrap.servers = [192.168.0.223:9092, 192.168.0.224:9092, 192.168.0.225:9092]
+	ssl.keystore.type = JKS
+	sasl.mechanism = GSSAPI
+	max.block.ms = 60000
+	interceptor.classes = null
+	ssl.truststore.password = null
+	client.id = DemoProducer1
+	ssl.endpoint.identification.algorithm = null
+	request.timeout.ms = 30000
+	acks = 1
+	receive.buffer.bytes = 32768
+	ssl.truststore.type = JKS
+	retries = 0
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	send.buffer.bytes = 131072
+	compression.type = none
+	metadata.fetch.timeout.ms = 60000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	block.on.buffer.full = false
+	ssl.key.password = null
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	batch.size = 16384
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	max.request.size = 1048576
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	linger.ms = 0
+
+2017-08-07 15:02:36  [ main:163 ] - [ WARN ]  The configuration key.deserializer = org.apache.kafka.common.serialization.StringDeserializer was supplied but isn't a known config.
+2017-08-07 15:02:36  [ main:163 ] - [ WARN ]  The configuration value.deserializer = org.apache.kafka.common.serialization.StringDeserializer was supplied but isn't a known config.
+2017-08-07 15:02:36  [ main:163 ] - [ WARN ]  The configuration enable.auto.commit = true was supplied but isn't a known config.
+2017-08-07 15:02:36  [ main:163 ] - [ WARN ]  The configuration group.id = MsgConsumer was supplied but isn't a known config.
+2017-08-07 15:02:36  [ main:170 ] - [ WARN ]  The configuration topic = testKafkaData3 was supplied but isn't a known config.
+2017-08-07 15:02:36  [ main:171 ] - [ INFO ]  Kafka version : 0.10.0.1
+2017-08-07 15:02:36  [ main:172 ] - [ INFO ]  Kafka commitId : a7a17cdec9eaa6c5
+2017-08-07 15:02:36  [ main:173 ] - [ DEBUG ]  Kafka producer started
+2017-08-07 15:02:36  [ kafka-producer-network-thread | DemoProducer1:240 ] - [ DEBUG ]  Initialize connection to node -1 for sending metadata request
+2017-08-07 15:02:36  [ kafka-producer-network-thread | DemoProducer1:240 ] - [ DEBUG ]  Initiating connection to node -1 at 192.168.0.223:9092.
+2017-08-07 15:02:36  [ kafka-producer-network-thread | DemoProducer1:352 ] - [ DEBUG ]  Added sensor with name node--1.bytes-sent
+2017-08-07 15:02:36  [ kafka-producer-network-thread | DemoProducer1:354 ] - [ DEBUG ]  Added sensor with name node--1.bytes-received
+2017-08-07 15:02:36  [ kafka-producer-network-thread | DemoProducer1:355 ] - [ DEBUG ]  Added sensor with name node--1.latency
+2017-08-07 15:02:36  [ kafka-producer-network-thread | DemoProducer1:359 ] - [ DEBUG ]  Completed connection to node -1
+2017-08-07 15:02:36  [ kafka-producer-network-thread | DemoProducer1:391 ] - [ DEBUG ]  Sending metadata request {topics=[testKafkaData3]} to node -1
+2017-08-07 15:02:36  [ kafka-producer-network-thread | DemoProducer1:593 ] - [ WARN ]  Error while fetching metadata with correlation id 0 : {testKafkaData3=LEADER_NOT_AVAILABLE}
+2017-08-07 15:02:36  [ kafka-producer-network-thread | DemoProducer1:593 ] - [ DEBUG ]  Updated cluster metadata version 2 to Cluster(nodes = [192.168.0.223:9092 (id: 9 rack: null), 192.168.0.224:9092 (id: 6 rack: null), 192.168.0.225:9092 (id: 5 rack: null)], partitions = [])
+2017-08-07 15:02:36  [ kafka-producer-network-thread | DemoProducer1:680 ] - [ DEBUG ]  Initialize connection to node 6 for sending metadata request
+2017-08-07 15:02:36  [ kafka-producer-network-thread | DemoProducer1:680 ] - [ DEBUG ]  Initiating connection to node 6 at 192.168.0.224:9092.
+2017-08-07 15:02:36  [ kafka-producer-network-thread | DemoProducer1:680 ] - [ DEBUG ]  Initialize connection to node 5 for sending metadata request
+2017-08-07 15:02:36  [ kafka-producer-network-thread | DemoProducer1:681 ] - [ DEBUG ]  Initiating connection to node 5 at 192.168.0.225:9092.
+2017-08-07 15:02:36  [ kafka-producer-network-thread | DemoProducer1:681 ] - [ DEBUG ]  Added sensor with name node-6.bytes-sent
+2017-08-07 15:02:36  [ kafka-producer-network-thread | DemoProducer1:684 ] - [ DEBUG ]  Added sensor with name node-6.bytes-received
+2017-08-07 15:02:36  [ kafka-producer-network-thread | DemoProducer1:684 ] - [ DEBUG ]  Added sensor with name node-6.latency
+2017-08-07 15:02:36  [ kafka-producer-network-thread | DemoProducer1:685 ] - [ DEBUG ]  Completed connection to node 6
+2017-08-07 15:02:36  [ kafka-producer-network-thread | DemoProducer1:685 ] - [ DEBUG ]  Sending metadata request {topics=[testKafkaData3]} to node 6
+2017-08-07 15:02:36  [ kafka-producer-network-thread | DemoProducer1:685 ] - [ DEBUG ]  Added sensor with name node-5.bytes-sent
+2017-08-07 15:02:36  [ kafka-producer-network-thread | DemoProducer1:694 ] - [ DEBUG ]  Added sensor with name node-5.bytes-received
+2017-08-07 15:02:36  [ kafka-producer-network-thread | DemoProducer1:694 ] - [ DEBUG ]  Added sensor with name node-5.latency
+2017-08-07 15:02:36  [ kafka-producer-network-thread | DemoProducer1:695 ] - [ DEBUG ]  Completed connection to node 5
+2017-08-07 15:02:36  [ kafka-producer-network-thread | DemoProducer1:903 ] - [ WARN ]  Error while fetching metadata with correlation id 1 : {testKafkaData3=LEADER_NOT_AVAILABLE}
+2017-08-07 15:02:36  [ kafka-producer-network-thread | DemoProducer1:903 ] - [ DEBUG ]  Updated cluster metadata version 3 to Cluster(nodes = [192.168.0.223:9092 (id: 9 rack: null), 192.168.0.224:9092 (id: 6 rack: null), 192.168.0.225:9092 (id: 5 rack: null)], partitions = [])
+2017-08-07 15:02:37  [ kafka-producer-network-thread | DemoProducer1:1002 ] - [ DEBUG ]  Sending metadata request {topics=[testKafkaData3]} to node 6
+2017-08-07 15:02:37  [ kafka-producer-network-thread | DemoProducer1:1017 ] - [ DEBUG ]  Updated cluster metadata version 4 to Cluster(nodes = [192.168.0.223:9092 (id: 9 rack: null), 192.168.0.224:9092 (id: 6 rack: null), 192.168.0.225:9092 (id: 5 rack: null)], partitions = [Partition(topic = testKafkaData3, partition = 0, leader = 9, replicas = [9,], isr = [9,]])
+2017-08-07 15:02:37  [ kafka-producer-network-thread | DemoProducer1:1030 ] - [ DEBUG ]  Initiating connection to node 9 at 192.168.0.223:9092.
+2017-08-07 15:02:37  [ main:1033 ] - [ INFO ]  Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+2017-08-07 15:02:37  [ kafka-producer-network-thread | DemoProducer1:1036 ] - [ DEBUG ]  Beginning shutdown of Kafka producer I/O thread, sending remaining records.
+2017-08-07 15:02:37  [ kafka-producer-network-thread | DemoProducer1:1037 ] - [ DEBUG ]  Added sensor with name node-9.bytes-sent
+2017-08-07 15:02:37  [ kafka-producer-network-thread | DemoProducer1:1037 ] - [ DEBUG ]  Added sensor with name node-9.bytes-received
+2017-08-07 15:02:37  [ kafka-producer-network-thread | DemoProducer1:1038 ] - [ DEBUG ]  Added sensor with name node-9.latency
+2017-08-07 15:02:37  [ kafka-producer-network-thread | DemoProducer1:1038 ] - [ DEBUG ]  Completed connection to node 9
+2017-08-07 15:02:37  [ kafka-producer-network-thread | DemoProducer1:1039 ] - [ DEBUG ]  Added sensor with name topic.testKafkaData3.records-per-batch
+2017-08-07 15:02:37  [ kafka-producer-network-thread | DemoProducer1:1039 ] - [ DEBUG ]  Added sensor with name topic.testKafkaData3.bytes
+2017-08-07 15:02:37  [ kafka-producer-network-thread | DemoProducer1:1040 ] - [ DEBUG ]  Added sensor with name topic.testKafkaData3.compression-rate
+2017-08-07 15:02:37  [ kafka-producer-network-thread | DemoProducer1:1040 ] - [ DEBUG ]  Added sensor with name topic.testKafkaData3.record-retries
+2017-08-07 15:02:37  [ kafka-producer-network-thread | DemoProducer1:1040 ] - [ DEBUG ]  Added sensor with name topic.testKafkaData3.record-errors
+2017-08-07 15:02:37  [ kafka-producer-network-thread | DemoProducer1:1103 ] - [ DEBUG ]  Removed sensor with name connections-closed:
+2017-08-07 15:02:37  [ kafka-producer-network-thread | DemoProducer1:1104 ] - [ DEBUG ]  Removed sensor with name connections-created:
+2017-08-07 15:02:37  [ kafka-producer-network-thread | DemoProducer1:1104 ] - [ DEBUG ]  Removed sensor with name bytes-sent-received:
+2017-08-07 15:02:37  [ kafka-producer-network-thread | DemoProducer1:1104 ] - [ DEBUG ]  Removed sensor with name bytes-sent:
+2017-08-07 15:02:37  [ kafka-producer-network-thread | DemoProducer1:1104 ] - [ DEBUG ]  Removed sensor with name bytes-received:
+2017-08-07 15:02:37  [ kafka-producer-network-thread | DemoProducer1:1105 ] - [ DEBUG ]  Removed sensor with name select-time:
+2017-08-07 15:02:37  [ kafka-producer-network-thread | DemoProducer1:1105 ] - [ DEBUG ]  Removed sensor with name io-time:
+2017-08-07 15:02:37  [ kafka-producer-network-thread | DemoProducer1:1105 ] - [ DEBUG ]  Removed sensor with name node--1.bytes-sent
+2017-08-07 15:02:37  [ kafka-producer-network-thread | DemoProducer1:1105 ] - [ DEBUG ]  Removed sensor with name node--1.bytes-received
+2017-08-07 15:02:37  [ kafka-producer-network-thread | DemoProducer1:1105 ] - [ DEBUG ]  Removed sensor with name node--1.latency
+2017-08-07 15:02:37  [ kafka-producer-network-thread | DemoProducer1:1106 ] - [ DEBUG ]  Removed sensor with name node-6.bytes-sent
+2017-08-07 15:02:37  [ kafka-producer-network-thread | DemoProducer1:1106 ] - [ DEBUG ]  Removed sensor with name node-6.bytes-received
+2017-08-07 15:02:37  [ kafka-producer-network-thread | DemoProducer1:1106 ] - [ DEBUG ]  Removed sensor with name node-6.latency
+2017-08-07 15:02:37  [ kafka-producer-network-thread | DemoProducer1:1106 ] - [ DEBUG ]  Removed sensor with name node-5.bytes-sent
+2017-08-07 15:02:37  [ kafka-producer-network-thread | DemoProducer1:1107 ] - [ DEBUG ]  Removed sensor with name node-5.bytes-received
+2017-08-07 15:02:37  [ kafka-producer-network-thread | DemoProducer1:1107 ] - [ DEBUG ]  Removed sensor with name node-5.latency
+2017-08-07 15:02:37  [ kafka-producer-network-thread | DemoProducer1:1107 ] - [ DEBUG ]  Removed sensor with name node-9.bytes-sent
+2017-08-07 15:02:37  [ kafka-producer-network-thread | DemoProducer1:1107 ] - [ DEBUG ]  Removed sensor with name node-9.bytes-received
+2017-08-07 15:02:37  [ kafka-producer-network-thread | DemoProducer1:1107 ] - [ DEBUG ]  Removed sensor with name node-9.latency
+2017-08-07 15:02:37  [ kafka-producer-network-thread | DemoProducer1:1107 ] - [ DEBUG ]  Shutdown of Kafka producer I/O thread has completed.
+2017-08-07 15:02:37  [ main:1110 ] - [ DEBUG ]  The Kafka producer has closed.

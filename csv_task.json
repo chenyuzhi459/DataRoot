@@ -1,0 +1,53 @@
+{
+    "type": "lucene_index",
+    "worker": "dev224.sugo.net:8091",
+    "spec": {
+        "dataSchema": {
+            "dataSource": "cyz-test0111",
+            "metricsSpec": [],
+            "parser": {
+                "parseSpec": {
+                    "format": "csv",
+                    "timestampSpec": {"column": "da","format": "millis"},
+                    "dimensionsSpec": {
+                        "dimensionExclusions": [],
+                        "spatialDimensions": [],
+                        "dimensions": [
+                            {"name": "strvalue1","type": "string"},
+                            {"name": "strvalue2","type": "string"},
+                            {"name": "strvalue3","type": "string"},
+                            {"name": "num1","type": "long"},
+                            {"name": "num2","type": "long"},
+                            {"name": "num3","type": "long"}
+                        ]
+                    },
+                    "listDelimiter": ",",
+                    "columns": ["da","strvalue1","strvalue2","strvalue3","num1","num2","num3"]
+                }
+            },
+            "granularitySpec": {
+                "intervals": ["2017-01-01/2017-01-21"],
+                "segmentGranularity": "DAY",
+                "queryGranularity": "NONE",
+                "type": "uniform"
+            }
+        },
+        "ioConfig": {
+            "type":"lucene_index",
+            "firehose":{
+                "type": "local",
+                "filter": "data1.csv",
+                "baseDir": "/data1/csv/"
+            }
+        },
+        "tuningConfig": {
+            "type": "lucene_index",
+            "maxRowsPerSegment": 5000000,
+            "overwrite": false,
+            "reportParseExceptions":true
+        }
+    },
+    "context":{
+        "debug":true
+    }
+}
