@@ -1,8 +1,9 @@
 {
-  "type":"default_supervisor",
+  "type":"lucene_supervisor",
   "dataSchema":{
-    "dataSource":"cyz-test00014",
+    "dataSource":"cyz-test12",
     "parser":{
+      "type":"string",
       "parseSpec":{
         "format":"json",
         "dimensionsSpec":{
@@ -14,8 +15,8 @@
           "excludeTimeColumn": false,
           "format":"millis"
         }
-      },
-      "type":"single"
+      }
+
     },
     "metricsSpec":[],
     "granularitySpec":{
@@ -43,8 +44,5 @@
     "useEarliestOffset":true,
     "completionTimeout":"PT1800S",
     "lateMessageRejectionPeriod":null
-  },
-  "ipLibSpec":{
-    "type":"none"
   }
 }
